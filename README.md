@@ -2,7 +2,7 @@
 
 ## Live aps & Endpoint
 - 🌐 Live App: [USA_House Price Regression](https://usa-house-pricing-regression-genome06.streamlit.app/)
-- 🔌 API Endpoint: [FastAPI_USA_House_Price](usa-house-pricing-regression.railway.internal)
+- 🔌 API Endpoint: [FastAPI_USA_House_Price](https://usa-house-pricing-regression-production.up.railway.app/)
 
 ## 📌 Project Overview
 This repository contains an end-to-end Machine Learning project that predicts house prices in the USA. It covers the entire lifecycle: from exploratory data analysis and model optimization in a Jupyter Notebook to a production-ready FastAPI backend and an interactive Streamlit dashboard.
