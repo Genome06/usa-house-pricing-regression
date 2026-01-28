@@ -21,7 +21,7 @@ with st.sidebar:
 
 if not submit:
     st.info("👈 Please enter property details in the sidebar to get a price estimation.")
-    st.image("ui/image/feature_importance.png", caption="Feature Importance of the Model")
+    st.image("image/feature_importance.png", caption="Feature Importance of the Model")
 
 # Output Prediction
 if submit:
