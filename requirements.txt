@@ -1,3 +1,4 @@
+# Data science & ML
 numpy
 pandas
 matplotlib
@@ -5,3 +6,13 @@ seaborn
 scikit-learn
 xgboost
 category_encoders
+
+# Deployment & API
+fastapi
+uvicorn
+pydantic
+requests
+streamlit
+
+# Testing
+pytest
