@@ -18,7 +18,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-predictor = HousePricePredictor("usa-house-price-api/house_price_api_model.pkl")
+predictor = HousePricePredictor("usa_house_price_api/house_price_api_model.pkl")
 
 # Data Model for Input Validation
 class HouseData(BaseModel):
