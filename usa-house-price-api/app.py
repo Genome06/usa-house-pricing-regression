@@ -2,9 +2,22 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from predictor import HousePricePredictor
 import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
+import os
+
 
 # App and Predictor Initialization
 app = FastAPI(title="USA House Price API")
+
+# CORS Middleware Configuration
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
+
 predictor = HousePricePredictor("usa-house-price-api/house_price_api_model.pkl")
 
 # Data Model for Input Validation
@@ -32,4 +45,7 @@ async def predict(data: HouseData):
         raise HTTPException(status_code=400, detail=str(e))
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    # get port from environment variable or default to 8000
+    port = int(os.environ.get("PORT", 8000))  
+    # Default host to 0.0.0.0 to allow external access
+    uvicorn.run(app, host="0.0.0.0", port=port)
