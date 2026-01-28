@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from predictor import HousePricePredictor
+from usa_house_price_api.predictor import HousePricePredictor
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 import os
