@@ -37,7 +37,7 @@ if submit:
     }
 
     try:
-        response = requests.post("http://127.0.0.1:8000/predict", json=payload)
+        response = requests.post("https://usa-house-pricing-regression-production.up.railway.app/predict", json=payload)
         res_data = response.json()
 
         if res_data["status"] == "success":
