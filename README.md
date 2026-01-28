@@ -1,6 +1,6 @@
 # 🏠 USA House Price Prediction Analysis
 ## 📌 Project Overview
-This project aims to build a robust machine learning pipeline to predict property sale prices. The analysis focuses on handling extreme outliers, mitigating overfitting, and performing business-driven feature engineering to provide accurate valuations for mid-market residential properties.
+This repository contains an end-to-end Machine Learning project that predicts house prices in the USA. It covers the entire lifecycle: from exploratory data analysis and model optimization in a Jupyter Notebook to a production-ready FastAPI backend and an interactive Streamlit dashboard.
 
 ## ❗ Problem Statement
 Accurately pricing real estate is a significant challenge due to several factors:
@@ -68,11 +68,17 @@ We benchmarked several models to find the optimal balance between accuracy and g
 
 ## 💻 Tech Stack
 - Language : Python
-- Libraries: Pandas, NumPy, Scikit-Learn, XGBoost, Category Encoders, Matplotlib, Seaborn.
+- Libraries: Pandas, NumPy, Scikit-Learn, XGBoost, Category Encoders, Matplotlib, Seaborn, Streamlit, FastAPI.
 - Environment: Google Colab / Jupyter Notebook.
 
-## 👤 Author
-**Baltasar Patrizhard Djata** Informatics Graduate | Aspiring Data Scientist [[linkedin](www.linkedin.com/in/rizhard-djata-a6255131)] | [[Portfolio Link](https://drive.google.com/file/d/1hxXqeZiHD-Lm9TXph4I0WM5_Z90Pxti6/view?usp=drive_link)]
+## 🚀 Project Components:
+- Research (Regression_House_Pricing_Prediction.ipynb): Detailed EDA, outlier filtering, and model benchmarking.
+
+- Backend API (main.py): Built with FastAPI to serve model predictions asynchronously.
+
+- Frontend UI (ui.py): An interactive Streamlit app for real-time inference.
+
+- Testing: Comprehensive unit tests using Pytest to ensure pipeline reliability.
 
 ## ⚙️ Installation & Usage
 1. Clone this repository:
@@ -83,3 +89,13 @@ We benchmarked several models to find the optimal balance between accuracy and g
    Open `USA_House_Price_Prediction.ipynb` in Google Colab or Jupyter Notebook.
 
 **Note: It is highly recommended to use a virtual environment to avoid dependency conflicts.**
+
+## ⚙️ How to Run
+- Install Dependencies: `pip install -r requirements.txt`
+
+- Start the API: `python usa-house-price-api/main.py`
+
+- Start the UI: `streamlit run usa-house-price-api/ui.py`
+
+## 👤 Author
+**Baltasar Patrizhard Djata** Informatics Graduate | Aspiring Data Scientist [[linkedin](www.linkedin.com/in/rizhard-djata-a6255131)] | [[Portfolio Link](https://drive.google.com/file/d/1hxXqeZiHD-Lm9TXph4I0WM5_Z90Pxti6/view?usp=drive_link)]
