@@ -81,3 +81,5 @@ We benchmarked several models to find the optimal balance between accuracy and g
    `pip install -r requirements.txt`
 3. Run the notebook:
    Open `USA_House_Price_Prediction.ipynb` in Google Colab or Jupyter Notebook.
+
+**Note: It is highly recommended to use a virtual environment to avoid dependency conflicts.**
